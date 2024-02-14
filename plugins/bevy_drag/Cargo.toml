@@ -1,0 +1,19 @@
+[package]
+name = "bevy_drag"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = { workspace = true }
+bevy_mod_picking = { workspace = true, features = ["all"] }
+bevy_mod_raycast = { workspace = true }
+bevy_cameras = { path = "../bevy_cameras" }
+
+bevy_egui = "0.21.0"
+
+
+[[example]]
+name = "simple_drag"
+path = "./src/examples/simple_drag.rs"
